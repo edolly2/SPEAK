@@ -4,11 +4,22 @@
 ----------------------
 --------------------*/
 
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
-*, *::before, *::after {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -17,25 +28,199 @@ img {
 }
 
 body {
-    font-size: 62.5%;
+    font-family: 'Roboto';
 }
 
 h1 {
     font-size: clamp(4.8em, 4.4vw, 7.2em);
+
 }
 
 h2 {
     font-size: clamp(3.6em, 3vw, 4.8em);
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
     font-size: clamp(2.4em, 2.3vw, 3.6em);
 }
 
-p, label, input, button {
+p,
+label,
+input,
+button {
     font-size: clamp(1.2em, 1.2vw, 2.4em);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button {
+    font-family: 'Montserrat';
+}
+
+header {
+    display: flex;
+    background-color: #727171;
+    width: 95%;
+    border-radius: 12px;
+    border: 2px solid #cc3d3d;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+main {
+    /* display: flex; */
+}
+
+fieldset {
+    border-radius: 6px;
+    border: 2px solid #cc3d3d;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(8, 8, 100, 0.6);
+}
+
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background: #080864;
+    background: linear-gradient(139deg, #313131 0%, #727171 35%, white 50%, #727171 65%, #313131 100%);
+    padding: 5rem;
+    border-radius: 12px;
+    border: 2px solid #cc3d3d;
+    box-shadow: 5px 5px 15px black;
+}
+
+label {
+    color: #fff;
+}
+
+input {
+    width: 50%;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #d4af37;
+}
+
+.period {
+    color: #cc3d3d;
+    text-shadow: none;
+}
+
+.head-title-cont {}
+
+.head-title {
+    color: #080864;
+    text-shadow: 2px 2px 2px #d4af37, -2px 2px 2px #d4af37, 2px -2px 2px #d4af37, 1px 2px 2px #d4af37, 2px 1px 2px #d4af37, -1px 2px 2px #d4af37, 2px -1px 2px #d4af37, 1px -2px 2px #d4af37, -2px 1px 2px #d4af37, -1px -2px 2px #d4af37, -2px -1px 2px #d4af37, 1px 1px 2px #d4af37, -1px -1px 2px #d4af37, -1px 1px 2px #d4af37, 1px -1px 2px #d4af37, 0px 2px 2px #d4af37, 2px 0px 2px #d4af37, -2px 0px 2px #d4af37, 0px -2px 2px #d4af37, 0px 1px 2px #d4af37, 1px 0px 2px #d4af37, 0px -1px 2px #d4af37, -1px 0px 2px #d4af37, 0px 0px 2px #d4af37;
+    padding: 0 2rem 2rem 2rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.logo-cont {}
+
+
+.logo {
+    width: clamp(7.5em, 7.3vw, 10.2em);
+    height: auto;
+    margin: 2em 2em 0 2em;
+
+}
+
+.form-cont {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.form-tile-cont {
+    width: 100%;
+}
+
+.form-title {
+    padding: 2rem;
+    color: #080864;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #d4af37, -2px 2px 2px #d4af37, 2px -2px 2px #d4af37, 1px 2px 2px #d4af37, 2px 1px 2px #d4af37, -1px 2px 2px #d4af37, 2px -1px 2px #d4af37, 1px -2px 2px #d4af37, -2px 1px 2px #d4af37, -1px -2px 2px #d4af37, -2px -1px 2px #d4af37, 1px 1px 2px #d4af37, -1px -1px 2px #d4af37, -1px 1px 2px #d4af37, 1px -1px 2px #d4af37, 0px 2px 2px #d4af37, 2px 0px 2px #d4af37, -2px 0px 2px #d4af37, 0px -2px 2px #d4af37, 0px 1px 2px #d4af37, 1px 0px 2px #d4af37, 0px -1px 2px #d4af37, -1px 0px 2px #d4af37, 0px 0px 2px #d4af37;
+}
+
+.signin-email-cont {
+    padding: 2rem;
+}
+
+.signin-pass-cont {
+    padding: 0 2rem 2rem 2rem;
+}
+
+#formGroupExampleInput {
+    width: 50%;
+}
+
+#formGroupExampleInput2 {
+    width: 50%;
+}
+
+.btn {
+    width: 10rem;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    box-shadow: 2px 2px 5px #000;
+    font-weight: 900;
+    color: #080864;
+}
+
+.form-btns-cont {
+    display: flex;
+    flex-grow: 1;
+}
+
+.form-links {
+    font-size: 10px;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.btn-cont-2 {
+    margin-left: auto;
+}
+
+.login-form-login-btn {
+    background-color: #d4af37;
+}
+
+.login-form-signup-btn {
+    background-color: #d4af37;
+}
+
+.sub-head-title-cont {
+    width: 100%;
+    text-align: center;
+}
+
+.sub-head-title {
+    font-size: clamp(1.8rem, 1.4vw, 2.4rem);
+    color: #080864;
+    font-weight: 900;
+    position: relative;
+    top: 50%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
 }
