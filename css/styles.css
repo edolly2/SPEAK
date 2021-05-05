@@ -1,0 +1,41 @@
+/*-------------------- 
+----------------------
+--------GLOBAL--------
+----------------------
+--------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: clamp(4.8em, 4.4vw, 7.2em);
+}
+
+h2 {
+    font-size: clamp(3.6em, 3vw, 4.8em);
+}
+
+h3, h4, h5, h6 {
+    font-size: clamp(2.4em, 2.3vw, 3.6em);
+}
+
+p, label, input, button {
+    font-size: clamp(1.2em, 1.2vw, 2.4em);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
